@@ -69,8 +69,6 @@ def find_closest_matches(input_text, k=3):
 
 @app.route('/book/generate', methods=['POST'])
 def closest_matches():
-    # obj = json.loads(request.json)
-    print(request)
     input_topics = request.json["topics"]
     input_topics_list = input_topics.split(",")
     topics = []
