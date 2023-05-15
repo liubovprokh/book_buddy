@@ -8,4 +8,4 @@ services:
       - .:/app
     environment:
       - FLASK_APP=./app/app.py
-
+      - DEBUG=1
